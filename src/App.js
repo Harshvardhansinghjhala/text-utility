@@ -3,10 +3,10 @@ import "./App.css";
 import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 import Screenone from "./components/Screenone";
-import About from "./components/About";
-import Home from "./Pages/Home";
+// import About from "./components/About";
+// import Home from "./Pages/Home";
 
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -55,23 +55,11 @@ function App() {
     }
   }
 
-  // usestate for green mode
-  // const [modegreen, setmodegreen] = useState('light');
-
-  // togglemodegreen function to switch green mode
-  // const togglemodegreen = () => {
-  //   if (modegreen === 'light') {
-  //     setmodegreen('green');
-  //   }
-  //   else {
-  //     setmodegreen('light');
-  //   }
-  // }
 
   return (
     <>
 
-      <header>
+      {/* <header>
         <Navbar title="TextUtils" mode={mode} togglemode={togglemode} />
       </header>
 
@@ -87,9 +75,19 @@ function App() {
           mode={mode}
           showalert={showalert}
         />} />
-      </Routes>
+      </Routes> */}
+
+      <Navbar title="TextUtils" mode={mode} togglemode={togglemode} />
 
       <Alert alert={alert} setalert={setalert} />
+
+      <Screenone
+        road="me tere kabil ho ya tere kabil nahi"
+        name="harsh vardhan singh jhala"
+        work={66}
+        mode={mode}
+        showalert={showalert}
+      />
 
     </>
   );
